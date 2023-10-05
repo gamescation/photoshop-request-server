@@ -1,0 +1,15 @@
+{
+  "buildCommand": "pnpm turbo build",
+  "ignoreCommand": "pnpm dlx turbo-ignore",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "authorization",
+          "value": "Bearer (.*)"
+        }
+      ]
+    }
+  ]
+}
